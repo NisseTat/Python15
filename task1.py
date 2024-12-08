@@ -14,7 +14,7 @@ formatter = logging.Formatter('%(levelname)s - %(message)s')
 
 debug_info = logging.FileHandler('debug_info.log', encoding="utf-8", mode='w')
 debug_info.addFilter(LogLevelFilter(logging.INFO))
-debug_info.setLevel(logging.DEBUG)
+# debug_info.setLevel(logging.DEBUG)
 debug_info.setFormatter(formatter)
 logger.addHandler(debug_info)
 
